@@ -1,4 +1,5 @@
   import $ from 'jquery'
+  import 'animate.css'
   import './style.css'
   $(function(){
     $('.dialog-wrap').hide();
