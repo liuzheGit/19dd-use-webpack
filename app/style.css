@@ -1,0 +1,380 @@
+*{box-sizing:border-box;margin:0;padding:0;list-style:none}
+body,html{width:100%}
+body{font-size:12px;}
+img{
+  display: block;
+}
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.main{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.main-top{
+  background: url("../images/bg.png") no-repeat;
+  background-size: 100%;
+  padding: 0 10px;
+}
+.main-top > div{
+  position: relative;
+}
+.main-top .title-wrap{
+  width: 2rem;
+  position: absolute;
+}
+
+.title-wrap img{
+  width: 100%;
+}
+
+.main-top .top-banner{
+  height: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.main-top .main-one{
+  height: 10rem;
+  /* border: 1px solid #000; */
+  background: url("../images/one-bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 12px;
+}
+
+@keyframes hamClick {
+  0% { transform: rotateZ(20deg); }
+  50% { transform: rotateZ(40deg); }
+  70% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(-10deg); }
+}
+
+/*砸金蛋主题*/
+.main-one .times-hint{
+  padding-left: .4em;
+  font-size: .36rem;
+  letter-spacing: 4px;
+}
+.times-hint .red-times{
+  color: #E33533;
+}
+
+.main-one .egg-main{
+  height: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.egg-main .egg-wrap{
+  flex: 1;
+  margin: 8px 20px 0;
+  position: relative;
+}
+
+.egg-wrap .hammer{
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  width: 60px;
+  animation: hamClick 1s;
+}
+.egg-wrap img{
+  width: 100%;
+}
+
+
+.prize-setting img{
+  width: 100%;
+}
+.main-one .explain-title{
+  color: #E44338;
+  font-size: .4rem;
+  margin-top: 10px;
+}
+.explain-title span{
+  margin-right: .6em;
+}
+
+.explain-words{
+  color: #CF8300;
+}
+
+.explain-words p{
+  margin-left: 10px;
+  position: relative;
+}
+
+.explain-words p::before{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 5px;
+}
+
+
+/*活动1结束*/
+.main .main-two{
+  height: 3rem;
+  background: url("../images/two-bg.png") no-repeat;
+  background-size: 100% 100%;
+  margin-top: 1.6rem;
+  padding: 12px;
+}
+
+.main-two .explain2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explain2 .explain2-words{
+  flex: 2.5;
+}
+.explain2-words h3{
+  text-align: center;
+  font-size: 16px;
+  color: #E44539;
+  margin: 10px 0 6px;
+}
+
+.explain2-words p{
+  color: #CF8300;
+  line-height: 1.6;
+}
+
+.explain2 .explain2-img{
+  flex: 1;
+}
+.explain2-img img{
+  width: 100%;
+}
+
+.main .main-three{
+  height: 6rem;
+  background: url("../images/one-bg.png") no-repeat;
+  background-size: 100%;
+  margin-top: 1.6rem;
+  padding: 12px;
+  position: relative;
+}
+.main-three .explain3{
+  color: #CF8300;
+}
+.main-three .explain3-img{
+  width: 2.2rem;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+.explain3-img img{
+  width: 100%;
+}
+
+.explain3 h3{
+  margin: 20px 0 2px;
+  font-size: 16px;
+  color: #E44539;
+  text-align: center;
+}
+
+.explain3>p{
+  text-align: center;
+}
+
+.explain3 .explain3-words{
+  margin-top: 20px;
+}
+
+.explain3-words p{
+  margin-left: 10px;
+  position: relative;
+}
+.explain3-words p::before{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 1px solid red;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 5px;
+}
+
+.explain3 .explain3-button{
+  text-align: center;
+  margin-top: .4rem;
+}
+
+.explain3-button a{
+  display: inline-block;
+  width: 3.4rem;
+}
+.explain3-button img{
+  width: 100%;
+}
+
+.main-one .one-title{
+  top: -1.4rem;
+  right: 0.5rem;
+}
+
+.main-two .two-title{
+  top: -1.4rem;
+  left: 0.5rem;
+}
+
+.main-three .three-title{
+  top: -1.4rem;
+  right: 0.5rem;
+}
+
+
+
+
+
+.main-bottom{
+  position: relative;
+  box-shadow: 0 -4px 40px #E54B3C;
+}
+
+.main-bottom img{
+  width: 100%;
+  display: block;
+  vertical-align: bottom;
+}
+
+
+
+/* 弹窗 */
+.dialog-wrap{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  z-index: 29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-wrap .dialog-award{
+  position: relative;
+}
+
+.get-success .dialog-award{
+  height: 9rem;
+  width: 6rem;
+  /* border: 1px solid #000; */
+  background: url('../images/award-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.get-fail .dialog-award,.to-login .dialog-award{
+  height: 6rem;
+  width: 6rem;
+  background: url('../images/dialog-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.get-prize .dialog-award{
+  height: 9rem;
+  width: 6rem;
+  background: url('../images/bag-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.get-prize .prize-price{
+  margin-top: 3.8rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #D7910D;
+}
+
+.get-prize .prize-txt{
+  color: #FCD689;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.award-record .dialog-award{
+  height: 9rem;
+  width: 6rem;
+  background: url('../images/record-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.award-record .record-words{
+  margin-top: 2.85rem;
+  padding: 0 1rem;
+  color: #DA981C;
+  font-size: 12px;
+}
+.record-words .record-items{
+  height: 3rem;
+  overflow: auto;
+}
+.record-items>div{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 4px;
+}
+
+.get-fail .fail-words,.to-login .fail-words{
+  color: #FFAB0D;
+  text-align: center;
+  margin-top: 2.53rem;
+  font-size: 14px;
+}
+
+.dialog-wrap .close-btn{
+  position: absolute;
+  right: -0.4rem;
+  top: 1.3rem;
+  width: .8rem;
+}
+
+.dialog-btns,.prize-btns{
+  width: 100%;
+  text-align: center;
+  /* border: 1px solid  green; */
+  position: absolute;
+  bottom: 0.6rem;
+}
+
+/* 弹窗底部按钮 */
+.dialog-btns a{
+  display: inline-block;
+  width: 60%;
+  background: #E5AC40;
+  color: #FFFFFF;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: .4rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.prize-btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.prize-btns a{
+  display: inline-block;
+  width: 40%;
+  background: #E5AC40;
+  color: #FFFFFF;
+  padding: 12px 6px;
+  font-size: .24rem;
+  border-radius: 20px;
+  font-weight: 400;
+}
